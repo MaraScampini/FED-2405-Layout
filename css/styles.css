@@ -1,3 +1,67 @@
-h1{
+:root{
+    font-size: 16px;
+    --green: #008000
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padreFlex{
+    display: flex;
+
+    height: 100vh;
+
+    
+
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}
+
+.hijoFlex {
+    width: 10rem;
+    height: 10rem;
+
+    background-color: var(--green);
+    border: 1px black solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hijoSelf {
+    align-self: flex-start;
+    justify-self: flex-end;
+
+}
+
+/* DISPLAY GRID */
+
+.padreGrid {
+    display: grid;
+
+    height: 100vh;
+
+    grid-template-columns: 2fr repeat(4, 1fr) 2fr;
+    grid-template-rows: 2fr repeat(4, 1fr) 2fr;
+}
+
+.hijoGrid1 {
     background-color: blue;
+    grid-row: 1/4;
+    grid-column: 1/4;
+
+    display: flex;
+}
+
+.hijoFlexGrid {
+    height: 10em;
+    width: 10em;
+    background-color: lime;
+    border: 1px solid black;
 }
